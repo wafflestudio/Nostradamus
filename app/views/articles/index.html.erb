@@ -1,0 +1,9 @@
+<% for article in @articles %>
+  <div>
+    <%=article.user_id%>
+    <%=article.title%>
+    <%=article.body%>
+    <%=article.view_count%>
+  </div>
+<% end %>
+<%= link_to("write", :action => "new") %>
